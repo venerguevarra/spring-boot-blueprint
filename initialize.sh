@@ -1,10 +1,8 @@
 #!/bin/bash
 
-
-projectName=projectName
-packageName=systemId
-packageName=com.companyname.systemId
-authorName=author
+read -p "Project Name: " projectName
+read -p "Package Name: " packageName
+read -p "Author  Name: " authorName
 
 companyName="`echo $packageName | cut -d '.' -f 2`"
 systemId="`echo $packageName | cut -d '.' -f 3`"
