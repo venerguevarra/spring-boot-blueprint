@@ -1,5 +1,7 @@
 package com.starter.service;
 
+import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.options;
+
 import java.io.IOException;
 
 import javax.persistence.EntityManagerFactory;
@@ -15,6 +17,8 @@ import org.springframework.context.support.ReloadableResourceBundleMessageSource
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
+
+import com.github.tomakehurst.wiremock.WireMockServer;
 
 @SpringBootApplication
 @EntityScan(basePackages = { Application.ENTITY_PACKAGE })
@@ -47,5 +51,15 @@ public class Application {
         messageSource.setBasename("classpath:messages");
         messageSource.setCacheSeconds(MESSAGE_CACHE_SECONDS);
         return messageSource;
+    }
+
+    @Bean
+    public WireMockServer wiremockStartup(ApplicationConfig config) {
+        WireMockServer wireMockServer = null;
+        if(config.getWiremock()) {
+            wireMockServer = new WireMockServer(options().usingFilesUnderClasspath("wiremock").port(config.getWiremockPort()));
+            wireMockServer.start();
+        }
+        return null;
     }
 }

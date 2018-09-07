@@ -26,6 +26,7 @@
         <hikaricp.version>3.1.0</hikaricp.version>
         <springloaded.version>1.2.8.RELEASE</springloaded.version>
         <commons-io.version>2.6</commons-io.version>
+        <wiremock.version>2.18.0</wiremock.version>
     </properties>
 
     <dependencies>
@@ -89,6 +90,11 @@
             <artifactId>mockito-all</artifactId>
             <version>${mockito.version}</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.tomakehurst</groupId>
+            <artifactId>wiremock-standalone</artifactId>
+            <version>${wiremock.version}</version>
         </dependency>
     </dependencies>
 

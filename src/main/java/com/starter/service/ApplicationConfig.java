@@ -19,5 +19,7 @@ import lombok.Setter;
 public class ApplicationConfig extends AsyncConfigurerSupport {
     private String version;
     private String mode;
+    private Boolean wiremock;
+    private Integer wiremockPort;
     private List<String> apiKeys = new ArrayList<>();
 }
