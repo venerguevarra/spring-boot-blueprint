@@ -1,6 +1,6 @@
 # {projectName}
 
-A Spring Boot template project in spinning off a new microservice architecture for small projects.
+A Spring Boot template project in spinning off a new microservice architecture.
 ## 1. Getting Started
 
 
