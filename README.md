@@ -1,6 +1,6 @@
 # {projectName}
 
-A Spring Boot template project in spinning off a new microservice.
+A Spring Boot template project in spinning off a new microservice using spring boot.
 
 ## 1. Getting Started
 
