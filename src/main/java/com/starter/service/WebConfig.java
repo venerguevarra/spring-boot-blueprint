@@ -29,6 +29,7 @@ public class WebConfig implements WebMvcConfigurer {
     }
     
     public void test4() {
-    	
+    	//some variable
     }
+
 }
