@@ -1,3 +1,4 @@
+# Author: Vener Guevarra
 #!/bin/bash
 
 read -p "Project Name: " projectName
