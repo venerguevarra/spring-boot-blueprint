@@ -36,4 +36,4 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## I temporarily added this line. This will be remove in the next commit.
+## I temporarily added this line.
