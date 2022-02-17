@@ -53,13 +53,5 @@ public class Application {
         return messageSource;
     }
 
-    @Bean
-    public WireMockServer wiremockStartup(ApplicationConfig config) {
-        WireMockServer wireMockServer = null;
-        if(config.getWiremock()) {
-            wireMockServer = new WireMockServer(options().usingFilesUnderClasspath("wiremock").port(config.getWiremockPort()));
-            wireMockServer.start();
-        }
-        return null;
-    }
+
 }
