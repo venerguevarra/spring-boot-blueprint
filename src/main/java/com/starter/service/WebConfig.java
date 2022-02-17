@@ -27,4 +27,8 @@ public class WebConfig implements WebMvcConfigurer {
     public void test3() {
     	
     }
+    
+    public void test4() {
+    	
+    }
 }
