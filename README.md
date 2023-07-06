@@ -1,6 +1,7 @@
 # {projectName}
 
 A Spring Boot template project in spinning off a new microservice architecture.
+
 ## 1. Getting Started
 
 
@@ -35,19 +36,3 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 ## 7. License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## I temporarily added this line.
-
-LINE 1
-
-LINE 2
-
-LINE 3
-
-LINE 4
-
-LINE 5
-
-LINE 6
-
-LINE 7
